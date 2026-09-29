@@ -1,4 +1,4 @@
-def compare_values(player1, player2):
+def compare_rock_paper_scissors(player1, player2):
     match player1, player2:
         case ("rock", "rock") | ("paper", "paper") | ("scissors", "scissors"):
             return "Empat", player1
@@ -16,7 +16,7 @@ def main():
     player1 = input("(rock/paper/scissors): ")
     player2 = input("(rock/paper/scissors): ")
 
-    result, winner = compare_values(player1, player2)
+    result, winner = compare_rock_paper_scissors(player1, player2)
     print(f"{result} amb {winner}")
 
 
