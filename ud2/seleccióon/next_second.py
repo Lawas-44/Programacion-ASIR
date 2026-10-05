@@ -31,8 +31,8 @@ def main():
     if result is None:
         print("La hora introducida no es válida.")
     else:
-        s, m, h = result
-        print(f"El siguiente segundo es: {h:02d}:{m:02d}:{s:02d}")
+        seconds_result, minutes_result, hours_result = result
+        print(f"El siguiente segundo es: {hours_result:02d}:{minutes_result:02d}:{seconds_result:02d}")
 
 
 if __name__ == "__main__":
