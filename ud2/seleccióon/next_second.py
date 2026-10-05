@@ -32,7 +32,7 @@ def main():
         print("La hora introducida no es válida.")
     else:
         s, m, h = result
-        print(f"El siguiente segundo es: {h}:{m}:{s}")
+        print(f"El siguiente segundo es: {h:02d}:{m:02d}:{s:02d}")
 
 
 if __name__ == "__main__":
