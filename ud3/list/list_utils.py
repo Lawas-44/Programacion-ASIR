@@ -45,3 +45,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def equals(lst1, lst2):
+    # Si no tienen el mismo tamaño no pueden ser iguales
+    if len(lst1) != len(lst2):
+        return False
+
+    for i in range(len(lst1)):
+        if lst1[i] != lst2[i]:
+            return False
+    return True
+
+def reverse(lst):
+    reversed_list = []
+    for i in range(len(lst) - 1, -1, -1):
+        reversed_list.append(lst[i])
+    return reversed_list
+
+def find(lst, value):
+    for i, val in enumerate(lst):
+        if val == value:
+            return i
+    return -1
