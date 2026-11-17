@@ -13,6 +13,7 @@ def calculate_rectangular_pizza_area(width, length):
 def is_round_pizza_more_profitable(round_price, round_diameter, rectangular_price, rectangular_width, rectangular_length):
     round_area = calculate_round_pizza_area(round_diameter)
     rectangular_area = calculate_rectangular_pizza_area(rectangular_width, rectangular_length)
+    # Precio por cm² de cada pizza
     round_price_per_cm2 = round_price / round_area
     rectangular_price_per_cm2 = rectangular_price / rectangular_area
 

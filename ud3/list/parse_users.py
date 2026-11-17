@@ -11,6 +11,7 @@ def main():
         
         # El fitxer /etc/passwd separa els camps amb ':'
         parts = line.split(":")
+        # Descarta las líneas que no tienen todos los campos
         if len(parts) >= 7:
             username = parts[0]
             home_dir = parts[5]

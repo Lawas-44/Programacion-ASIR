@@ -14,6 +14,7 @@ def read_lines():
 def parse_groups(lines):
     users_dict = {}
     for line in lines:
+        # Formato de cada línea: grupo:x:GID:usuario1,usuario2
         camps = line.split(":")
         group = camps[0]
 
@@ -30,6 +31,7 @@ def parse_groups(lines):
 
 def print_groups(users_dict):
     print("{")
+    # Usuarios en orden alfabético
     users = sorted(users_dict)
     for i, user in enumerate(users):
         # La última línea no lleva coma

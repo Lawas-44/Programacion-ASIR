@@ -3,9 +3,11 @@ def min_multiple_three_sequence(target):
     seq = []
     total = 0
     curr = 3
+    # Añade múltiplos hasta que la suma llegue al objetivo
     while total < target:
         seq.append(str(curr))
         total += curr
+        # Siguiente múltiplo de 3
         curr += 3
     return " ".join(seq)
 

@@ -1,5 +1,6 @@
 # Divide los minutos en horas completas y minutos sobrantes
 def convert_minutes(minutes):
+    # // es la división entera y % el resto
     hours = minutes // 60
     remaining_minutes = minutes % 60
 

@@ -18,6 +18,7 @@ def add_contact(contacts):
         if valid_tel(tel):
             break
 
+    # No sobrescribe un contacto existente
     if name in contacts:
         print("Contacto existente")
     else:
@@ -36,6 +37,7 @@ def delete_contact(contacts):
 
     if name in contacts:
         confirm = input(f"Seguro que quieres eliminar a {name} y/N: ")
+        # Pide confirmación antes de borrar
         if confirm in "yY":
             del contacts[name]
         else:
@@ -56,6 +58,7 @@ def menu():
     print("5. Salir")
 
 def main():
+    # Pequeña pausa antes de mostrar el menú
     time.sleep(2)
     # Agenda: nombre -> teléfono
     contacts = {}
@@ -63,6 +66,7 @@ def main():
         menu()
         select = input("\n> ")
     
+        # Ejecuta la opción elegida
         match select:
             case "1":
                 add_contact(contacts)

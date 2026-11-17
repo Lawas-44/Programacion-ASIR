@@ -3,6 +3,7 @@ def wait_for_five():
     while True:
         val = int(input("Introdueix un enter: "))
         if val == 5:
+            # return sale de la función y, por tanto, del bucle
             return "5 trobat!"
 
 def main():

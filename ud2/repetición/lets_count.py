@@ -1,6 +1,7 @@
 # Concatena los números de 1 a limit
 def count_up(limit):
     result = ""
+    # limit + 1 para incluir el último
     for i in range(1, limit + 1):
         result += str(i)
     return result

@@ -16,9 +16,11 @@ def selected(delegats):
     if not hay_votos(delegats):
         return
     
+    # Mayor número de votos
     max_v = max(delegats.values())
     ganadores = obtener_clave(delegats, max_v)
     
+    # Un solo ganador o empate
     if len(ganadores) == 1:
         print(f"Ganador: {ganadores[0]} ({max_v} votos)")
     else:
@@ -52,6 +54,7 @@ def read_votes(votes):
     print("Lista de votos:", ", ".join(votes))
 
 def vote(delegats, votes):
+    # strip() y title() normalizan el nombre: " carla" -> "Carla"
     voto = input("¿A quién votas?: ").strip().title()
     if not voto:
         print("No puedes dejarlo en blanco.")

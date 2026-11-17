@@ -1,6 +1,7 @@
 # Traduce la nota numérica a su calificación
 def mark_result(mark):
     match mark:
+        # Una nota fuera de 0-10 no entra en ningún caso y devuelve None
         case 0 | 1 | 2 | 3 | 4:
             return "Suspés"
         case 5:

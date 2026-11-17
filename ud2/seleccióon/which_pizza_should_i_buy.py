@@ -46,6 +46,7 @@ def main():
         rectangular_price,
         rectangular_width,
         rectangular_length)
+    # round(..., 2) muestra dos decimales
     print(f"La pizza {result} es mes rentable: {round(price_per_cm2, 2)}")
 
 if __name__ == "__main__":

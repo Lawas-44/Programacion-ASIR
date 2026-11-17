@@ -5,6 +5,7 @@ def full_multiply_tables(start, end):
         result.append(f"=== TAULA DEL {n} ===")
         for i in range(1, 11):
             result.append(f"{n} * {i:2d} = {n * i}")
+        # Línea en blanco entre tablas
         result.append("")
     # strip() quita la línea vacía final
     return "\n".join(result).strip()

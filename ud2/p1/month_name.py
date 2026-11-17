@@ -13,6 +13,7 @@ def month_name(num):
         case 10: return "Octubre"
         case 11: return "Noviembre"
         case 12: return "Diciembre"
+        # Cualquier otro número no es un mes
         case _: return "Valor invalido"
 
 def main():

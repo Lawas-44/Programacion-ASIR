@@ -5,6 +5,7 @@ def count_chars(words):
         total += len(word)
     return total
 
+# Si hay empate se queda la primera
 def longest_word(words):
     longest = words[0]
     for word in words:
@@ -31,8 +32,10 @@ def count_words(words):
 
 def main():
     text = input("> ")
+    # split() sin argumentos separa por cualquier espacio
     words = text.split()
 
+    # Evita errores con un texto vacío
     if not words:
         print("No has escrito ningún texto.")
         return
@@ -43,6 +46,7 @@ def main():
     print(f"Número de caracteres: {count_chars(words)}")
     print(f"Palabra más larga: {longest_word(words)}")
     print(f"Palabra más corta: {shortest_word(words)}")
+    # Cada clave del diccionario es una palabra distinta
     print(f"Número de palabras únicas: {len(count)}")
     print("Apariciones de cada palabra:")
     for word, val in count.items():

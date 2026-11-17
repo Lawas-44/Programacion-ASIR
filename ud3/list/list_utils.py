@@ -33,6 +33,7 @@ def max_list(lista):
     return lista[max_i]
 
 def sum_list(lista):
+    # Acumulador de la suma
     n = 0
     for i in lista:
         n += i
@@ -56,6 +57,7 @@ def equals(lst1, lst2):
     if len(lst1) != len(lst2):
         return False
 
+    # Al primer elemento distinto ya no son iguales
     for i in range(len(lst1)):
         if lst1[i] != lst2[i]:
             return False
@@ -64,6 +66,7 @@ def equals(lst1, lst2):
 # Recorre la lista desde el final
 def reverse(lst):
     reversed_list = []
+    # Del último índice al 0 (el -1 de range no se incluye)
     for i in range(len(lst) - 1, -1, -1):
         reversed_list.append(lst[i])
     return reversed_list

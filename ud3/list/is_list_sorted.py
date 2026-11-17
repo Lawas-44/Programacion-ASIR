@@ -5,6 +5,7 @@ def is_list_sorted(lista):
     for i in range(len(lista) - 1):
         if lista[i] > lista[i + 1]:
             return False
+    # Ningún par está desordenado
     return True
 
 def main():

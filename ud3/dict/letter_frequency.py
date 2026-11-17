@@ -12,6 +12,7 @@ def count_letters(phrase):
     letters = {}
 
     for letter in phrase.lower():
+        # Ignora espacios, signos y letras con tilde
         if letter not in string.ascii_lowercase:
             continue
         else:

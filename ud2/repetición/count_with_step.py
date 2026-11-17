@@ -1,6 +1,7 @@
 # Cuenta de 1 a limit saltando de step en step
 def count_step(limit, step):
     result = []
+    # El tercer argumento de range es el salto
     for i in range(1, limit + 1, step):
         result.append(str(i))
     return "\n".join(result)

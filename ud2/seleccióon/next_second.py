@@ -20,14 +20,17 @@ def next_second(seconds: int, minutes: int, hours: int):
 
     seconds += 1
 
+    # A los 60 segundos se suma un minuto
     if seconds == 60:
         seconds = 0
         minutes += 1
 
+    # A los 60 minutos se suma una hora
     if minutes == 60:
         minutes = 0
         hours += 1
 
+    # Pasada la medianoche vuelve a 0
     if hours == 24:
         hours = 0
 
@@ -39,14 +42,17 @@ def main():
         seconds = int(input("Introduce los segundos: "))
         minutes = int(input("Introduce los minutos: "))
         hours = int(input("Introduce la hora: "))
+    # int() lanza ValueError si no se introduce un número
     except ValueError:
         print("Error: Debes ingresar números enteros válidos.")
         return
 
     result = next_second(seconds, minutes, hours)
 
+    # result es None si la hora no era válida
     if result:
         sec_res, min_res, hr_res = result
+        # :02d rellena con ceros a la izquierda
         print(f"El siguiente segundo es: {hr_res:02d}:{min_res:02d}:{sec_res:02d}")
 
 

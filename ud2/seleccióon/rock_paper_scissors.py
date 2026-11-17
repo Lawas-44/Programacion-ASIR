@@ -10,6 +10,7 @@ def compare_rock_paper_scissors(player1, player2):
         case ("scissors", "rock") | ("paper", "scissors") | ("rock", "paper"):
             return "Guanya el jugador 2", player2
 
+        # Jugada no reconocida
         case _:
             return "Valor introducido incorrecto (rock, paper, scissors)"
 

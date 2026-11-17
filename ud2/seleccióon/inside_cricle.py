@@ -2,6 +2,7 @@ import math
 
 # Dentro si la distancia al centro no supera el radio
 def is_inside_circle(x, y, a, b, r):
+    # Distancia entre el punto (x, y) y el centro (a, b)
     distance = math.sqrt((x - a) ** 2 + (y - b) ** 2)
     return distance <= r
 

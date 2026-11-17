@@ -7,12 +7,14 @@ def play_adventure():
     
     opcio1 = input("Opcio (1/2): ")
     
+    # Primera decisión
     if opcio1 == "1":
         print("\nS'ha fet de dia. Tens molta fam.")
         print("Que vols fer?")
         print("1. Espere")
         print("2. Vaig a cercar menjar")
         
+        # Segunda decisión: solo si has esperado
         opcio2 = input("Opcio (1/2): ")
         if opcio2 == "1":
             return "Has mort de fam."
@@ -22,6 +24,7 @@ def play_adventure():
             print("1. No hi puge, es perillos")
             print("2. Vaig a pujar!")
             
+            # Tercera decisión: la palmera
             opcio3 = input("Opcio (1/2): ")
             if opcio3 == "1":
                 return "Has mort de fam."
@@ -32,6 +35,7 @@ def play_adventure():
         else:
             return "Opcio no valida."
 
+    # Buscar comida de noche termina la aventura
     elif opcio1 == "2":
         return "Es de nit, no veus res. T'esperes igualment."
     else:

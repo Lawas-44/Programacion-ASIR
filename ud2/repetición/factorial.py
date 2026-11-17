@@ -1,5 +1,6 @@
 # Multiplica de 1 a n
 def calculate_factorial(n):
+    # Empieza en 1, el elemento neutro de la multiplicación
     fact = 1
     for i in range(1, n + 1):
         fact *= i

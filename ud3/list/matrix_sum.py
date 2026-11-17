@@ -8,6 +8,7 @@ def read_matrix(rows, cols):
         matrix.append(row)
     return matrix
 
+# Muestra cada fila con los valores separados por espacios
 def print_matrix(matrix):
     for row in matrix:
         print(" ".join(str(val) for val in row))

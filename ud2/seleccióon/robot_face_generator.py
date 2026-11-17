@@ -1,5 +1,6 @@
 # Cada característica elige su línea; la última opción es la de por defecto
 def generate_robot_face(monyo, ulls, nas, boca):
+    # lower() para aceptar mayúsculas
     monyo_lower = monyo.lower()
     if monyo_lower == "arrissat" or monyo_lower == "arrissats":
         linia_monyo = "@@@@@"
@@ -32,6 +33,7 @@ def generate_robot_face(monyo, ulls, nas, boca):
     else:
         linia_boca = ".www."
 
+    # Une las cuatro líneas de la cara
     return linia_monyo + "\n" + linia_ulls + "\n" + linia_nas + "\n" + linia_boca
 
 def main():

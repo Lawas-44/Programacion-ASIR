@@ -11,7 +11,9 @@ def read_words():
 def group_by_initial(words):
     groups = {}
     for word in words:
+        # Inicial en minúsculas para no separar 'P' y 'p'
         initial = word[0].lower()
+        # Crea la lista la primera vez que aparece la inicial
         if initial not in groups:
             groups[initial] = []
         groups[initial].append(word)

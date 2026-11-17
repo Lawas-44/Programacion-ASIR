@@ -1,6 +1,7 @@
 # Aplica Collatz hasta llegar a 1 y guarda cada paso
 def collatz_sequence(n):
     steps = 0
+    # Guarda cada valor como texto para mostrarlo al final
     result = [f"n0: {n}"]
     
     while n > 1:
@@ -13,6 +14,7 @@ def collatz_sequence(n):
         result.append(f"n{steps}: {n}")
         
     result.append(f"Passos: {steps}")
+    # Une todas las líneas en un solo texto
     return "\n".join(result)
 
 def main():

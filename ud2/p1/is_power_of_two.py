@@ -4,9 +4,11 @@ def es_potencia_de_dos(num):
     if num <= 0:
         return False
 
+    # Quita todos los factores 2
     while num % 2 == 0:
         num //= 2
         
+    # Si solo tenía factores 2, queda 1
     return num == 1
 
 def main():

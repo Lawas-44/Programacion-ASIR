@@ -8,6 +8,7 @@ def count_word(word, words):
 # Cuenta cada palabra de la frase sin distinguir mayúsculas
 def count_words(phrase):
     words = {}
+    # Separa la frase en palabras por los espacios
     for word in phrase.lower().split(" "):
         count_word(word, words)
 

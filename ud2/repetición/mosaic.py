@@ -1,6 +1,7 @@
 # Diagonal X, debajo D y encima U
 def generate_mosaic(size):
     result = []
+    # i es la fila y j la columna
     for i in range(size):
         row = []
         for j in range(size):
@@ -10,6 +11,7 @@ def generate_mosaic(size):
                 row.append("D")
             else:
                 row.append("U")
+        # Cada fila se guarda como texto separado por espacios
         result.append(" ".join(row))
     return "\n".join(result)
 
