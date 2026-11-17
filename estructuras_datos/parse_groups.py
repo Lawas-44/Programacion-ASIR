@@ -1,9 +1,13 @@
 def read_lines():
     lines = []
-    line = input()
-    while line != "":
-        lines.append(line)
+    # Para con una línea vacía o al final del fichero (EOFError)
+    try:
         line = input()
+        while line != "":
+            lines.append(line)
+            line = input()
+    except EOFError:
+        pass
     return lines
 
 
