@@ -14,18 +14,20 @@ def min_list(lista):
     for indice, valor in enumerate(lista):
         if valor < min_value:
             min_i = indice
+            min_value = valor
     return lista[min_i]
 
 def max_list(lista):
     # 1. Inicializamos con el primer elemento
-    min_i = 0
-    min_value = lista[0]
+    max_i = 0
+    max_value = lista[0]
 
     # 2. Recorremos el resto de la lista
     for indice, valor in enumerate(lista):
-        if valor > min_value:
-            min_i = indice
-    return lista[min_i]
+        if valor > max_value:
+            max_i = indice
+            max_value = valor
+    return lista[max_i]
 
 def sum_list(lista):
     n = 0
