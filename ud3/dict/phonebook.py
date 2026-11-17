@@ -36,9 +36,9 @@ def delete_contact(contacts):
     name = input("Nombre: ").lower()
 
     if name in contacts:
+        # Pide confirmación antes de borrar; por defecto (Enter) no se borra
         confirm = input(f"Seguro que quieres eliminar a {name} y/N: ")
-        # Pide confirmación antes de borrar
-        if confirm in "yY":
+        if confirm in ("y", "Y"):
             del contacts[name]
         else:
             print(f"{name} no eliminado")

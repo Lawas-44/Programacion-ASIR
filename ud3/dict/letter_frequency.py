@@ -22,12 +22,13 @@ def count_letters(phrase):
 
 
 def main():
-    print("Escribe una frase para contar las palabras:") 
+    print("Escribe una frase para contar las letras:")
     phrase = str(input("> "))
     
     letters = count_letters(phrase)
 
-    for letter, val in letters.items():
+    # Ordenadas de mayor a menor frecuencia
+    for letter, val in sorted(letters.items(), key=lambda item: item[1], reverse=True):
         print(f"{letter}: {val}")
 
 if __name__ == "__main__":

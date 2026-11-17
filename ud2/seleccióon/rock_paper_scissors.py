@@ -12,14 +12,18 @@ def compare_rock_paper_scissors(player1, player2):
 
         # Jugada no reconocida
         case _:
-            return "Valor introducido incorrecto (rock, paper, scissors)"
+            return "Valor introducido incorrecto (rock, paper, scissors)", None
 
 def main():
     player1 = input("(rock/paper/scissors): ")
     player2 = input("(rock/paper/scissors): ")
 
     result, winner = compare_rock_paper_scissors(player1, player2)
-    print(f"{result} amb {winner}")
+    # winner es None si alguna jugada no era válida
+    if winner is None:
+        print(result)
+    else:
+        print(f"{result} amb {winner}")
 
 
 if __name__ == "__main__":
