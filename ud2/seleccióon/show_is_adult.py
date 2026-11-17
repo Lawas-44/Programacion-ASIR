@@ -1,6 +1,6 @@
 # Devuelve un mensaje según la edad
 def is_adult(age):
-    if age > 18:
+    if age >= 18:
         return "Eres major d'edat!"
     else:
         return "No eres major d'edat!"

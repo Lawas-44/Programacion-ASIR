@@ -10,6 +10,7 @@ def main():
     number2 = int(input("Introdueix un altre nombre enter: "))
 
     result = greater_number(number1, number2)
+    print(result)
 
 if __name__ == "__main__":
     main()
