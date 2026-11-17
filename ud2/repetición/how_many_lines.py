@@ -1,3 +1,4 @@
+# Cuenta las líneas leídas hasta END
 def count_lines():
     count = 0
     while True:

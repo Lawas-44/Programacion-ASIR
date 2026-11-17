@@ -1,3 +1,4 @@
+# Devuelve el nombre del mes (1-12)
 def month_name(num):
     match num:
         case 1: return "Enero"

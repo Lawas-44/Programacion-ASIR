@@ -1,3 +1,4 @@
+# Lee pares nombre/puntuación hasta END y se queda con el mejor
 def find_winner():
     best_name = ""
     best_score = -1

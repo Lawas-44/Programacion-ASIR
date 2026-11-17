@@ -1,3 +1,4 @@
+# Repite el punto num veces
 def generate_dots(num):
     return "." * num
 

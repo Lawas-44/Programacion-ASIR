@@ -1,3 +1,4 @@
+# Días de cada mes (febrero sin bisiesto); -1 si no es válido
 def get_days_per_month(mark):
     match mark:
         case 1 | 3 | 5 | 7 | 8 | 10 | 12:

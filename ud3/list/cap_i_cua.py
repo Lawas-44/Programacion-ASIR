@@ -1,5 +1,6 @@
 from list_utils import read_list, reverse, equals
 
+# Capicúa si coincide con su inversa
 def cap_i_cua(lista):
     return equals(lista, reverse(lista))
 

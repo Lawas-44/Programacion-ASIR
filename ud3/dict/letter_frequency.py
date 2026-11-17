@@ -1,11 +1,13 @@
 import string
 
+# Suma 1 a la letra o la crea con 1
 def count_letter(letter, letters):
         if letter in letters:
             letters[letter] += 1
         else:
             letters[letter] = 1
 
+# Cuenta solo letras de la a a la z, en minúsculas
 def count_letters(phrase):
     letters = {}
 

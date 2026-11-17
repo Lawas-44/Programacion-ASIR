@@ -1,3 +1,4 @@
+# Reparto justo si las galletas se dividen exactas entre las personas
 def is_fair(cookies_amount, people_amount):
     if (cookies_amount % people_amount) == 0:
         return "Let's eat"

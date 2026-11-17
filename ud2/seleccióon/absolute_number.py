@@ -1,3 +1,4 @@
+# Si es negativo le cambia el signo
 def calculate_absolute_number(number):
     if number < 0:
         return number * -1

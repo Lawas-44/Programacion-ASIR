@@ -1,3 +1,4 @@
+# Devuelve el resultado y la jugada ganadora
 def compare_rock_paper_scissors(player1, player2):
     match player1, player2:
         case ("rock", "rock") | ("paper", "paper") | ("scissors", "scissors"):

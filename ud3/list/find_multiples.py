@@ -1,5 +1,6 @@
 from list_utils import read_list
 
+# Se queda con los elementos divisibles entre num
 def find_multiples(num, lista):
     lista_mult = []
     for i in lista:

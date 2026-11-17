@@ -1,3 +1,4 @@
+# Números entre start y end, sin incluirlos
 def count_between(start, end):
     result = ""
     for i in range(start + 1, end):

@@ -1,5 +1,6 @@
 from list_utils import read_list
 
+# Intercambio en una sola línea mediante tuplas
 def swap_elements(lista, pos1, pos2):
     lista[pos1], lista[pos2] = lista[pos2], lista[pos1]
 

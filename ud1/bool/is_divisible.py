@@ -1,3 +1,4 @@
+# Divisible si el resto de la división es 0
 def is_divisible(number1, number2):
     return number1 % number2 == 0
 

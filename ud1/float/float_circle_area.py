@@ -1,5 +1,6 @@
 import math
 
+# Área = π · r²
 def calculate_circle_area(radius):
     return math.pi * radius ** 2
 

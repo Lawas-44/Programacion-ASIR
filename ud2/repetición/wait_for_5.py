@@ -1,3 +1,4 @@
+# Pide números hasta que se introduzca un 5
 def wait_for_five():
     while True:
         val = int(input("Introdueix un enter: "))

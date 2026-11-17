@@ -1,3 +1,4 @@
+# Lee palabras hasta una línea vacía
 def read_words():
     words = []
     word = input("Palabra: ")
@@ -6,6 +7,7 @@ def read_words():
         word = input("Palabra: ")
     return words
 
+# Agrupa en listas según la primera letra
 def group_by_initial(words):
     groups = {}
     for word in words:

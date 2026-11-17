@@ -1,8 +1,10 @@
+# Aplica Collatz hasta llegar a 1 y guarda cada paso
 def collatz_sequence(n):
     steps = 0
     result = [f"n0: {n}"]
     
     while n > 1:
+        # Par: n/2, impar: 3n+1
         if n % 2 == 0:
             n = n // 2
         else:

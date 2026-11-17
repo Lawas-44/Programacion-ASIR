@@ -1,3 +1,4 @@
+# Traduce la nota numérica a su calificación
 def mark_result(mark):
     match mark:
         case 0 | 1 | 2 | 3 | 4:

@@ -1,3 +1,4 @@
+# Tabla del 1 al 10; :2d alinea el multiplicador
 def print_multiply_table(num):
     result = []
     for i in range(1, 11):

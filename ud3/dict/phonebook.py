@@ -1,5 +1,6 @@
 import time, re
 
+# Teléfono válido: exactamente 9 dígitos
 def valid_tel(tel):
     patro = r"^\d{9}$"
 
@@ -11,6 +12,7 @@ def valid_tel(tel):
 def add_contact(contacts):
     name = input("Nombre: ").lower()
 
+    # Repite hasta que el teléfono sea válido
     while True:
         tel = input("Telefono: ")
         if valid_tel(tel):
@@ -55,6 +57,7 @@ def menu():
 
 def main():
     time.sleep(2)
+    # Agenda: nombre -> teléfono
     contacts = {}
     while True:
         menu()

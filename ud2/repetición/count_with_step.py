@@ -1,3 +1,4 @@
+# Cuenta de 1 a limit saltando de step en step
 def count_step(limit, step):
     result = []
     for i in range(1, limit + 1, step):

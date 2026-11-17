@@ -1,14 +1,17 @@
 import time
 
+# Avisa y devuelve False si no hay votos
 def hay_votos(delegats):
     if not delegats:
         print("Aún no hay votos.")
         return False
     return True
 
+# Claves que tienen el valor buscado
 def obtener_clave(diccionario, valor_buscado):
     return [clave for clave, v in diccionario.items() if v == valor_buscado]
 
+# Muestra el ganador; si hay empate se elige a mano
 def selected(delegats):
     if not hay_votos(delegats):
         return
@@ -55,6 +58,7 @@ def vote(delegats, votes):
         return
         
     votes.append(voto)
+    # get evita el error si es su primer voto
     delegats[voto] = delegats.get(voto, 0) + 1
     print(f"Voto para {voto} registrado.")
 
@@ -69,6 +73,7 @@ def menu():
 
 def main():
     time.sleep(1)
+    # Conteo (nombre -> votos) e historial de votos
     delegats = {}
     votes = []
     

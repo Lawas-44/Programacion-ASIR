@@ -1,6 +1,7 @@
 import sys
 
 def main():
+    # Lee la entrada línea a línea hasta END
     for line in sys.stdin:
         line = line.strip()
         if line == "END":

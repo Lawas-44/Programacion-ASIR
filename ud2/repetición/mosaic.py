@@ -1,3 +1,4 @@
+# Diagonal X, debajo D y encima U
 def generate_mosaic(size):
     result = []
     for i in range(size):

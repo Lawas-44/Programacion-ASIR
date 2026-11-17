@@ -1,3 +1,4 @@
+# Concatena los números de 1 a limit
 def count_up(limit):
     result = ""
     for i in range(1, limit + 1):

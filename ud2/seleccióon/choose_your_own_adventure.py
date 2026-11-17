@@ -1,3 +1,4 @@
+# Cada decisión abre una rama; devuelve el final alcanzado
 def play_adventure():
     print("Et despertes a una illa de nit. L'ultim que recordes es ofegar-te.")
     print("Que vols fer?")

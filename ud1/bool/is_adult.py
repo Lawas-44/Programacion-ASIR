@@ -1,3 +1,4 @@
+# Mayor de edad a partir de 18
 def is_adult(age):
     return age >= 18
 

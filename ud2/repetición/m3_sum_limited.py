@@ -1,3 +1,4 @@
+# Suma múltiplos de 3 hasta alcanzar el objetivo
 def min_multiple_three_sequence(target):
     seq = []
     total = 0

@@ -1,3 +1,4 @@
+# Lee la matriz fila a fila
 def read_matrix(rows, cols):
     matrix = []
     for i in range(rows):
@@ -11,6 +12,7 @@ def print_matrix(matrix):
     for row in matrix:
         print(" ".join(str(val) for val in row))
 
+# Suma posición a posición
 def matrix_sum(m1, m2):
     result = []
     for i in range(len(m1)):

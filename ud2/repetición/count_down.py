@@ -1,3 +1,4 @@
+# Concatena los números de n a 1
 def count_down(n):
     result = ""
     for i in range(n, 0, -1):

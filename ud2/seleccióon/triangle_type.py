@@ -1,3 +1,4 @@
+# Tres lados iguales: equilátero; dos: isósceles; ninguno: escaleno
 def determine_triangle_type(a, b, c):
     if a == b == c:
         return "Equilater"

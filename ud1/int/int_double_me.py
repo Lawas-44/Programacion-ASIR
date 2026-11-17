@@ -1,3 +1,4 @@
+# Devuelve el doble del número
 def double(number):
     return number * 2
 

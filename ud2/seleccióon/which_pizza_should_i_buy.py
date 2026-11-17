@@ -1,5 +1,6 @@
 import math
 
+# Área del círculo a partir del diámetro
 def calculate_round_pizza_area(diameter):
     radius = diameter / 2
     return math.pi * radius ** 2
@@ -10,6 +11,7 @@ def calculate_rectangular_pizza_area(width, length):
 def calculate_price_per_cm2(price, area):
     return price / area
 
+# Devuelve la pizza con menor precio por cm² y ese precio
 def is_round_pizza_more_profitable(
         round_price, 
         round_diameter, 

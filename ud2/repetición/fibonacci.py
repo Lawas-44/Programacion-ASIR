@@ -1,3 +1,4 @@
+# Devuelve los n primeros términos de Fibonacci
 def generate_fibonacci(n):
     if n <= 0:
         return ""
@@ -5,6 +6,7 @@ def generate_fibonacci(n):
         return "0"
     
     seq = [0, 1]
+    # Cada término es la suma de los dos anteriores
     for i in range(2, n):
         next_val = seq[-1] + seq[-2]
         seq.append(next_val)

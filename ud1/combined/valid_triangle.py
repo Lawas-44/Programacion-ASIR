@@ -1,3 +1,4 @@
+# Desigualdad triangular: cada par de lados debe sumar más que el tercero
 def is_valid_triangle(side1, side2, side3):
     return (
         side1 + side2 > side3

@@ -1,3 +1,4 @@
+# Segundos válidos: de 0 a 59
 def is_in_seconds_range(seconds):
     return 0 <= seconds <= 59
 

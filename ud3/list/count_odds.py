@@ -1,5 +1,6 @@
 from list_utils import read_list
 
+# Impar si el resto entre 2 es 1
 def count_odds(lista):
     odds = 0
     for i in lista:

@@ -1,3 +1,4 @@
+# Resta al precio el porcentaje de descuento
 def calculate_final_price(price, discount):
     discount_amount = price * discount / 100
     return price - discount_amount

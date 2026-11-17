@@ -1,3 +1,4 @@
+# Devuelve el mayor de los dos
 def greater_number(number1, number2):
     if number1 > number2:
         return number1

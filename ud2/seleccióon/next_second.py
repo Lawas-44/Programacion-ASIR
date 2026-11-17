@@ -1,3 +1,4 @@
+# Valida cada componente y avisa de los incorrectos
 def is_valid_time(seconds: int, minutes: int, hours: int) -> bool:
     is_valid = True
     if not (0 <= seconds < 60):
@@ -12,6 +13,7 @@ def is_valid_time(seconds: int, minutes: int, hours: int) -> bool:
     return is_valid
 
 
+# Suma un segundo propagando el acarreo a minutos y horas
 def next_second(seconds: int, minutes: int, hours: int):
     if not is_valid_time(seconds, minutes, hours):
         return None

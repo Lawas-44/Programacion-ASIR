@@ -1,9 +1,11 @@
+# Suma 1 a la palabra o la crea con 1
 def count_word(word, words):
         if word in words:
             words[word] += 1
         else:
             words[word] = 1
 
+# Cuenta cada palabra de la frase sin distinguir mayúsculas
 def count_words(words, phrase):
     words = {}
     for word in phrase.lower().split(" "):

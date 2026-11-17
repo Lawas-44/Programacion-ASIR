@@ -1,3 +1,4 @@
+# Multiplica de 1 a n
 def calculate_factorial(n):
     fact = 1
     for i in range(1, n + 1):

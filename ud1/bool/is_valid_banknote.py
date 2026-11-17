@@ -1,3 +1,4 @@
+# Comprueba si el importe corresponde a un billete de euro
 def is_valid_banknote(amount):
     valid_banknotes = [5, 10, 20, 50, 100, 200, 500]
     return amount in valid_banknotes

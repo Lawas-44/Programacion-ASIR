@@ -1,3 +1,4 @@
+# Caracteres sin espacios: suma de longitudes de las palabras
 def count_chars(words):
     total = 0
     for word in words:
@@ -18,6 +19,7 @@ def shortest_word(words):
             shortest = word
     return shortest
 
+# Apariciones de cada palabra
 def count_words(words):
     count = {}
     for word in words:

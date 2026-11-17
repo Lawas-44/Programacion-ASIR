@@ -1,3 +1,4 @@
+# Divide entre 2 mientras sea par; si acaba en 1 era potencia de 2
 def es_potencia_de_dos(num):
     while num % 2 == 0:
         num //= 2

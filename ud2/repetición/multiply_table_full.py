@@ -1,3 +1,4 @@
+# Tablas de multiplicar de start a end
 def full_multiply_tables(start, end):
     result = []
     for n in range(start, end + 1):
@@ -5,6 +6,7 @@ def full_multiply_tables(start, end):
         for i in range(1, 11):
             result.append(f"{n} * {i:2d} = {n * i}")
         result.append("")
+    # strip() quita la línea vacía final
     return "\n".join(result).strip()
 
 def main():

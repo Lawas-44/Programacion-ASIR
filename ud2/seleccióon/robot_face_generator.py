@@ -1,3 +1,4 @@
+# Cada característica elige su línea; la última opción es la de por defecto
 def generate_robot_face(monyo, ulls, nas, boca):
     monyo_lower = monyo.lower()
     if monyo_lower == "arrissat" or monyo_lower == "arrissats":

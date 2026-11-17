@@ -1,3 +1,4 @@
+# Pide el tamaño y luego cada elemento
 def read_list():
     l = []
     num_elements = int(input("Cuantos valores tendrá la lista: "))
@@ -5,6 +6,7 @@ def read_list():
         l.append(int(input(f"Introduce el valor {i + 1} de la lista: ")))
     return l
 
+# Devuelve el menor valor de la lista
 def min_list(lista):
     # 1. Inicializamos con el primer elemento
     min_i = 0
@@ -17,6 +19,7 @@ def min_list(lista):
             min_value = valor
     return lista[min_i]
 
+# Devuelve el mayor valor de la lista
 def max_list(lista):
     # 1. Inicializamos con el primer elemento
     max_i = 0
@@ -58,12 +61,14 @@ def equals(lst1, lst2):
             return False
     return True
 
+# Recorre la lista desde el final
 def reverse(lst):
     reversed_list = []
     for i in range(len(lst) - 1, -1, -1):
         reversed_list.append(lst[i])
     return reversed_list
 
+# Posición de la primera aparición o -1
 def find(lst, value):
     for i, val in enumerate(lst):
         if val == value:
