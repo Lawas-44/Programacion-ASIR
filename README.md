@@ -12,7 +12,7 @@ Ejercicios de Python del módulo de Programación (1.º ASIR), siguiendo los [ap
 - `ud3/` — Estructuras de datos:
   - `list/` — Listas, cadenas y matrices. `list_utils.py` es un módulo con funciones que reutilizan los demás ejercicios.
   - `dict/` — Diccionarios.
-- `estructuras_datos/` — Práctica 2 (`text_analyzer.py`, `parse_groups.py`). Entregada con la etiqueta `P2`.
+  - `p2/` — Práctica 2 (`text_analyzer.py`, `parse_groups.py`).
 
 ## Uso
 
@@ -30,5 +30,5 @@ python3 ud3/list/parse_users.py < /etc/passwd
 ```
 
 ```bash
-python3 estructuras_datos/parse_groups.py < /etc/group
+python3 ud3/p2/parse_groups.py < /etc/group
 ```
